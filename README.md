@@ -31,7 +31,7 @@ Install from requirements.txt.
 
 ***pip install -r requirements.txt***
 
-Run FastAPI.
+<ins>Run FastAPI from the folder app.<ins>
 
 ***fastapi dev main.py***
 
