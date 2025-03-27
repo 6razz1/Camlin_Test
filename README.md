@@ -12,7 +12,7 @@ and
 
 ***docker run -p 8080:8080 camlin_test***
 
-If evrething is ok, you can access to the API with
+If evrething is ok, you should access to the API with<br>
 http://127.0.0.1:8080/docs
 <br><br>
 
@@ -27,7 +27,13 @@ Activate virtual env.
 
 ***source .venv/bin/activate***
 
-Install from requirements.txt
+Install from requirements.txt.
 
 ***pip install -r requirements.txt***
 
+Run FastAPI.
+
+***fastapi dev main.py***
+
+If evrething is ok, you should access to the API with<br>
+http://127.0.0.1:8000/docs
