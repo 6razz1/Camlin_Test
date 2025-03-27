@@ -83,7 +83,6 @@ async def add_wallet_batch(data: WalletList):
 
 @router.put("/wallet/{user_id}", response_class=PrettyJSONResponse)
 async def edit_wallet_batch(user_id: str, data: WalletList):
-
     wallet = filehandler.file_get(user_id)
 
     for item in data.wallet:
@@ -102,7 +101,6 @@ async def edit_wallet_batch(user_id: str, data: WalletList):
 
 @router.put("/wallet/add/{currency}/{amount}", response_class=PrettyJSONResponse)
 async def edit_wallet_add(currency: str, amount: float, user_id: str | None = None):
-
     if user_id:
         wallet = filehandler.file_get(user_id)
         exist = False
@@ -123,7 +121,6 @@ async def edit_wallet_add(currency: str, amount: float, user_id: str | None = No
 
 @router.put("/wallet/sub/{currency}/{amount}", response_class=PrettyJSONResponse)
 async def edit_wallet_add(currency: str, amount: float, user_id: str):
-
     wallet = filehandler.file_get(user_id)
     exist = False
     for k in range(len(wallet)):

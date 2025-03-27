@@ -11,7 +11,6 @@ class FileHandler:
         self.storage = 'storage/'
 
     def file_get(self, user_id):
-
         path = self.storage + user_id + '.json'
 
         try:
@@ -27,7 +26,6 @@ class FileHandler:
                 return json.load(f)
 
     def file_put(self, user_id, wallet):
-
         path = self.storage + user_id + '.json'
 
         try:
@@ -43,6 +41,7 @@ class FileHandler:
                 json.dump(wallet, f, ensure_ascii=False)
                 logger.info("The JSON file for user id " + user_id + " is updated.")
                 return True
+
     def file_check(self, user_id):
         path = self.storage + user_id + '.json'
         if os.path.exists(path):
