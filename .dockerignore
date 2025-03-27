@@ -1,0 +1,4 @@
+/app/storage/*
+/app/logs/*
+**/__pycache__
+
