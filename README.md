@@ -31,9 +31,9 @@ Install from requirements.txt.
 
 ***pip install -r requirements.txt***
 
-<ins>Run FastAPI from the folder app.<ins>
+<ins>Run FastAPI from the root folder.<ins>
 
-***fastapi dev main.py***
+***fastapi dev app/main.py***
 
-If evrething is ok, you should access to the API with<br>
+If everything is ok, you should access to the API with<br>
 http://127.0.0.1:8000/docs

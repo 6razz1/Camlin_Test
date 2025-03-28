@@ -59,7 +59,7 @@ async def get_wallet(user_id: str):
 
 @router.get("/wallets", response_class=PrettyJSONResponse)
 async def get_wallet_list():
-    file_list = os.listdir("storage/")
+    file_list = os.listdir("app/storage/")
 
     if 'dummy' in file_list:
         file_list.remove('dummy')

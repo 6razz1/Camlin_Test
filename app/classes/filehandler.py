@@ -8,7 +8,7 @@ logger = logging.getLogger('uvicorn.error')
 class FileHandler:
 
     def __init__(self):
-        self.storage = 'storage/'
+        self.storage = 'app/storage/'
 
     def file_get(self, user_id):
         path = self.storage + user_id + '.json'

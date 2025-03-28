@@ -5,7 +5,7 @@ import logging.config
 
 logger = logging.getLogger('uvicorn.error')
 logFormatter = logging.Formatter("%(asctime)s [%(threadName)s] [%(levelname)s]  %(message)s")
-fileHandler = logging.handlers.RotatingFileHandler(filename='logs/camlin.log', maxBytes=1000000, backupCount=10)
+fileHandler = logging.handlers.RotatingFileHandler(filename='app/logs/camlin.log', maxBytes=1000000, backupCount=10)
 fileHandler.setFormatter(logFormatter)
 logger.addHandler(fileHandler)
 
